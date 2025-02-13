@@ -23,5 +23,3 @@ You can download the APK file for installation [here](https://github.com/Vitalij
 Vitalii Mieliet
 e-mail: vitalij.melet@gmail.com
 Time spent: 28 hours
-
-...
