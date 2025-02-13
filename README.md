@@ -11,8 +11,8 @@ This is an application for creating and managing a To-Do List. Users can add and
 
 ## Screenshots
 
-![Screenshot 1](assets\screensorts\photo_2025-02-13_14-51-43.jpg)
-![Screenshot 2](assets\screensorts\photo_2025-02-13_14-52-10.jpg)
+![Screenshot 1](assets/screensorts/photo_2025-02-13_14-51-43.jpg)
+![Screenshot 2](assets/screensorts/photo_2025-02-13_14-52-10.jpg)
 
 ## Development
 
