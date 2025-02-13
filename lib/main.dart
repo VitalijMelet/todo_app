@@ -55,8 +55,7 @@ class _ToDoState extends State<ToDo> {
 
   Future<void> _saveNotes() async {
     final prefs = await SharedPreferences.getInstance();
-    final String encodedData =
-        jsonEncode(_toDoList); // Кодируем список в строку
+    final String encodedData = jsonEncode(_toDoList);
     await prefs.setString('todo_list', encodedData);
   }
 
@@ -117,6 +116,7 @@ class _ToDoState extends State<ToDo> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
+// Text field
                   Expanded(
                     child: Material(
                       elevation: 3,
@@ -127,6 +127,7 @@ class _ToDoState extends State<ToDo> {
                         maxLines: 3,
                         style: TextStyle(fontSize: 16.0),
                         controller: _controller,
+                        textCapitalization: TextCapitalization.sentences,
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
@@ -151,32 +152,31 @@ class _ToDoState extends State<ToDo> {
                   SizedBox(
                     width: 16,
                   ),
-                  Align(
-                    child: ElevatedButton(
-                      onPressed: isButtonActive
-                          ? () {
-                              _addToDo();
-                            }
-                          : null,
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xff007EA7),
-                          minimumSize: Size(42, 40),
-                          padding:
-                              EdgeInsets.symmetric(vertical: 2, horizontal: 2),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(16)),
-                          elevation: 3),
-                      child: Icon(
-                        Icons.add,
-                        color: Colors.white,
-                        size: 30,
-                      ),
+// Add Button
+                  ElevatedButton(
+                    onPressed: isButtonActive
+                        ? () {
+                            _addToDo();
+                          }
+                        : null,
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xff007EA7),
+                        minimumSize: Size(42, 40),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 2, horizontal: 2),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16)),
+                        elevation: 3),
+                    child: Icon(
+                      Icons.add,
+                      color: Colors.white,
+                      size: 30,
                     ),
                   )
                 ],
               ),
             ),
-// Список задач
+// Task list
             Expanded(
               child: ListView.builder(
                   padding: EdgeInsets.only(top: 24),
