@@ -16,10 +16,10 @@ This is an application for creating and managing a To-Do List. Users can add and
 
 ## Download APK
 
-You can download the APK file for installation [here](https://github.com/VitalijMelet/todo_app/blob/main/app-release.apk)
+You can download the APK file for installation [here](https://github.com/vitalii-mieliet/todo_app/blob/main/app-release.apk)
 
 ## Development
 
-Vitalii Mieliet
-e-mail: vitalij.melet@gmail.com
-Time spent: 28 hours
+- **Vitalii Mieliet**
+- **e-mail: vitalij.melet@gmail.com**
+- **Time spent: 28 hours**
