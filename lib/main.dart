@@ -162,12 +162,13 @@ class _ToDoState extends State<ToDo> {
             ),
 // Список задач
             Expanded(
-              child: Container(
-                margin: EdgeInsets.only(top: 24),
-                child: ListView.builder(
-                    itemCount: _toDoList.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Dismissible(
+              child: ListView.builder(
+                  padding: EdgeInsets.only(top: 24),
+                  itemCount: _toDoList.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 10.0),
+                      child: Dismissible(
                         key: UniqueKey(),
                         direction: DismissDirection.endToStart,
                         onDismissed: (direction) {
@@ -186,18 +187,17 @@ class _ToDoState extends State<ToDo> {
                           ),
                         ),
                         child: Card(
-                          shadowColor: Colors.black87,
-
+                          margin: EdgeInsets.zero,
                           color: Color(0xff9AD1D5),
-                          // shape: RoundedRectangleBorder(
-                          //     borderRadius: BorderRadius.circular(16)),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16)),
                           child: ListTile(
                             title: Text(_toDoList[index]),
                           ),
                         ),
-                      );
-                    }),
-              ),
+                      ),
+                    );
+                  }),
             ),
           ],
         ),
