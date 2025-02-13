@@ -16,6 +16,6 @@ This is an application for creating and managing a To-Do List. Users can add and
 
 ## Development
 
-Vitalii Mieliet
-e-mail: vitalij.melet@gmail.com
-Time spent: 28 hours
+- **Vitalii Mieliet**
+- **e-mail:** vitalij.melet@gmail.com
+= **Time spent:** 28 hours
