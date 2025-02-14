@@ -15,7 +15,7 @@ This is an application for creating and managing a To-Do List. Users can add and
 
 ## Download APK
 
-You can download the APK file for installation [here](https://github.com/vitalii-mieliet/todo_app/blob/main/app-release.apk)
+You can download the APK file for installation [here](https://github.com/vitalii-mieliet/todo_app/raw/refs/heads/main/app-release.apk)
 
 ## Development
 
