@@ -58,3 +58,6 @@ build/
 *.log
 *.lock
 *.DS_Store
+
+#Исключение
+!build/app/outputs/apk/release/*.apk   
